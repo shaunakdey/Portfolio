@@ -49,7 +49,7 @@ $(document).ready(function(){
         },
         
         onLeave: function(index, nextIndex, direction) {
-            if(nextIndex.index == 1){
+            if(nextIndex.index == 1 && direction === 'down'){
                 //Change navigation color
                 $('#heading h1 a').toggleClass('change-color-white');
                 $('#heading a i').css('background-color', 'white');
@@ -66,13 +66,13 @@ $(document).ready(function(){
                 }
             }
 
-            else if(nextIndex.index == 2) {
+            else if(nextIndex.index == 2 && direction === 'down') {
                 $('#projects-whoops').addClass('animated fadeInDown').css('animation-delay', '0.2s');
                 $('#projects-text').addClass('animated fadeInDown').css('animation-delay', '1s');
                 $('.link-github').addClass('animated lightSpeedIn').css('animation-delay', '2s');
             }
 
-            else if(nextIndex.index == 3) {
+            else if(nextIndex.index == 3 && direction === 'down') {
                 $('#contact-text').addClass('animated fadeInDown').css('animation-delay', '0.4s');
                 $('.social-icons').addClass('animated fadeInLeft');
                 var socicons = $('.social-icons');
