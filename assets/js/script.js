@@ -1,7 +1,11 @@
+
+
 $(document).ready(function(){
     var $header_top = $('.header-top');
     var $nav = $('nav');
+    var origAspectRatio = Math.floor(window.innerWidth / window.innerHeight);
 
+    //Listeners
     $('#heading').find('a').on('click', function() {
         $(this).parent().toggleClass('open-menu');
     });
@@ -17,11 +21,40 @@ $(document).ready(function(){
             $('.speech').css('opacity', '0');
         }, 2000);
     });
-      
+    
+    //Change flex-direction based on aspect-ratio
+    var processLayout = function(aspectRatio) {
+        if(aspectRatio == 0) {
+            //Projects
+            $('#projects').addClass('flex-column');
+
+            //Contact
+            $('#contact').removeClass('flex-row-reverse');
+            $('#contact').addClass('flex-column');
+        }
+        else {
+            //projects
+            $('#projects').removeClass('flex-column');
+
+            //Contact
+            $('#contact').removeClass('flex-column');
+            $('#contact').addClass('flex-row-reverse');
+        }
+    };
+    processLayout(origAspectRatio);
+    $(window).on('resize', function(){
+        if(origAspectRatio != Math.floor(window.innerWidth / window.innerHeight)) {
+            origAspectRatio = Math.floor(window.innerWidth / window.innerHeight);
+            processLayout(origAspectRatio);
+        }
+    });
+
+    //Load Particles
     particlesJS.load('particles-js', 'assets/js/particle-system.json', function() {
         console.log('callback - particles.js config loaded');
     });
 
+    // FullPage Code
     $('#fullpage').fullpage({
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         sectionsColor: ['white', '#17202a', '#aeb6bf', 'white'],
@@ -49,7 +82,7 @@ $(document).ready(function(){
         },
         
         onLeave: function(index, nextIndex, direction) {
-            if(nextIndex.index == 1 && direction === 'down'){
+            if(nextIndex.index == 1){
                 //Change navigation color
                 $('#heading h1 a').toggleClass('change-color-white');
                 $('#heading a i').css('background-color', 'white');
@@ -66,13 +99,13 @@ $(document).ready(function(){
                 }
             }
 
-            else if(nextIndex.index == 2 && direction === 'down') {
+            else if(nextIndex.index == 2) {
                 $('#projects-whoops').addClass('animated fadeInDown').css('animation-delay', '0.2s');
                 $('#projects-text').addClass('animated fadeInDown').css('animation-delay', '1s');
                 $('.link-github').addClass('animated lightSpeedIn').css('animation-delay', '2s');
             }
 
-            else if(nextIndex.index == 3 && direction === 'down') {
+            else if(nextIndex.index == 3) {
                 $('#contact-text').addClass('animated fadeInDown').css('animation-delay', '0.4s');
                 $('.social-icons').addClass('animated fadeInLeft');
                 var socicons = $('.social-icons');

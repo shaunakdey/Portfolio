@@ -264,18 +264,6 @@ nav li a:hover {
     transition: color 0.8s ease-in-out;
 }
 
-.change-background-asphault {
-    background-color: #17202A;
-    -webkit-transition: background-color 0.8s ease-in-out;
-    -o-transition: background-color 0.8s ease-in-out;
-    transition: background-color 0.8s ease-in-out;
-}
-
-/* Section */
-.fp-section {
-    border: 2px solid #17202a;
-}
-
 /* Home */
 #home {
     position: relative;
@@ -347,7 +335,6 @@ nav li a:hover {
 
 #top-home-content h1 {
     font-size: 2em;
-    color: #17202a;
     letter-spacing: 2px;
     text-align: center;
 }
@@ -369,9 +356,6 @@ nav li a:hover {
 
 .card {
     margin: 0px;
-    background-image: -webkit-radial-gradient(circle, #43a047, #003300);
-    background-image: -o-radial-gradient(circle, #43a047, #003300);
-    background-image: radial-gradient(circle, #43a047, #003300);
     width: 80px;
     height: 80px;
     border-radius: 6px;
@@ -391,7 +375,6 @@ nav li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: white;
     font-weight: 800px;
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -401,8 +384,20 @@ nav li a:hover {
             animation-duration: 0.2s;
 }
 
+.not-element {
+    background: white; 
+    color: #17202A;
+}
+
 .element {
     color: #fff;
+    background-image: -webkit-radial-gradient(circle, #43a047, #003300);
+    background-image: -o-radial-gradient(circle, #43a047, #003300);
+    background-image: radial-gradient(circle, #43a047, #003300);
+}
+
+.element .element-symbol h1 {
+    color: white;
 }
 
 .element:hover .element-header, .card:hover .element-footer {
@@ -437,7 +432,6 @@ nav li a:hover {
 .element-symbol {
     height: 40px;
     font-size: 1.5em;
-    color: white;
 }
 
 .element-name {
@@ -543,7 +537,7 @@ nav li a:hover {
 }
 
 .heading {
-    font-size: 48px;
+    font-size: 3.5em;
     -webkit-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -551,6 +545,12 @@ nav li a:hover {
 }
 
 .panel:nth-child(1) {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+        background-color: white;
+}
+
+.panel:nth-child(3) {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
 }
@@ -571,30 +571,29 @@ nav li a:hover {
 }
 
 .panel:nth-child(2) {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    background-image: -webkit-radial-gradient(circle, greenyellow, green);
-    background-image: -o-radial-gradient(circle, greenyellow, green);
-    background-image: radial-gradient(circle, greenyellow, green);
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
 }
 
 .panel:nth-child(3) {
     -ms-flex-preferred-size: 500px;
         flex-basis: 500px;
-    background-color: whitesmoke;
+        background-image: -webkit-radial-gradient(circle, greenyellow, green);
+        background-image: -o-radial-gradient(circle, greenyellow, green);
+        background-image: radial-gradient(circle, greenyellow, green);
 }
 
-.panel:nth-child(3):hover .heading {
+.panel:nth-child(1):hover .heading {
     background-color: #000;
     color: white;
 }
 
 .panel:nth-child(4) {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    background-image: -webkit-radial-gradient(circle, white, lightgray);
-    background-image: -o-radial-gradient(circle, white, lightgray);
-    background-image: radial-gradient(circle, white, lightgray);
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+        background-image: -webkit-radial-gradient(circle, lightcoral, tomato);
+        background-image: -o-radial-gradient(circle, lightcoral, tomato);
+        background-image: radial-gradient(circle, lightcoral, tomato);
 }
 
 .panel:nth-child(5) {
@@ -608,9 +607,7 @@ nav li a:hover {
 .panel:nth-child(6) {
     -ms-flex-preferred-size: 200px;
         flex-basis: 200px;
-    background-image: -webkit-radial-gradient(circle, lightcoral, tomato);
-    background-image: -o-radial-gradient(circle, lightcoral, tomato);
-    background-image: radial-gradient(circle, lightcoral, tomato);
+    
 }
 
 .panel:nth-child(7) {
@@ -621,14 +618,6 @@ nav li a:hover {
     background-image: radial-gradient(circle, lightblue, deepskyblue);
 }
 
-.panel:nth-child(8) {
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    background-image: -webkit-radial-gradient(circle, orange, orangered);
-    background-image: -o-radial-gradient(circle, orange, orangered);
-    background-image: radial-gradient(circle, orange, orangered);
-}
-
 .panel-initial-text {
     height: 100%;
     -webkit-transition: 0.5s ease-in-out;
@@ -637,7 +626,7 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 20px;
+    font-size: 2em;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -683,9 +672,10 @@ nav li a:hover {
 
 /* Projects */
 #projects {
-    width: 100%;
+    width: 90%;
     position: relative;
-    height: 100%;
+    height: 90%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -697,9 +687,14 @@ nav li a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     text-align: justify;
+}
+
+.flex-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 #antimage {
@@ -785,8 +780,8 @@ nav li a:hover {
     -o-transition: 0.5s all;
     transition: 0.5s all;
     font-size: 1.5em;
-    top: -15%;
-    left: 25%;
+    top: 5%;
+    left: 0%;
     width: 200px;
     height: 100px;
     text-align: center;
@@ -820,7 +815,7 @@ nav li a:hover {
     border-color: #fff #fff transparent transparent;
  }
 
- #project-whoops {
+ #projects-whoops {
     font-size: 3em; 
     color: #17202A; 
     line-height: 2em;
@@ -834,6 +829,10 @@ nav li a:hover {
     padding-right: 64px;
     -webkit-animation-duration: 0.8s;
             animation-duration: 0.8s;
+ }
+
+ .wrapper-container {
+    width: 90%;
  }
 
  .link-github {
@@ -863,10 +862,8 @@ nav li a:hover {
     margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -ms-flex-line-pack: distribute;
@@ -874,6 +871,11 @@ nav li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+}
+
+.flex-row-reverse {
+    -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 #envelope {
@@ -1063,8 +1065,8 @@ nav li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1115,5 +1117,10 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+footer h1 {
+    font-size: 1.5em; 
+    letter-spacing: 1.5px;
 }
 
