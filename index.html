@@ -3,21 +3,21 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GGWP Labs</title>
+        <title>What's up yo!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fullpage.css"/>
         <link href="https://fonts.googleapis.com/css?family=Bangers|Nunito+Sans:600,800" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.js"></script>
         <link rel="stylesheet" href="assets/css/headings.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.js"></script>
     </head>
     <body>
         <div class="header-top clearfix" id="heading">
-            <h1 class="l-left">
-                <a href="#home-anchor" class='bangers' style="margin: 16px;">GGWP Labs</a>
-            </h1>
             <a class="l-right toggle-menu" href="#">
                 <i></i>
                 <i></i>
@@ -26,86 +26,76 @@
         </div>
         <nav class="hide">
             <ul id="menu">
-                <li data-menuanchor="about-anchor">
-                    <a href="#about-anchor"><h1 class="bangers">About Us</h1></a>
+                <li data-menuanchor="home">
+                    <a href="#home"><h1><span><i class="fas fa-home"></i></span> Home</h1></a>
                 </li>
-                <li data-menuanchor="projects-anchor">
-                    <a href="#projects-anchor"><h1 class="bangers">My Projects</h1></a>
+                <li data-menuanchor="about">
+                    <a href="#about"><h1><span><i class="fas fa-smile-beam"></i></span> About Me</h1></a>
                 </li>
-                <li data-menuanchor="contact-anchor">
-                    <a href="#contact-anchor"><h1 class="bangers">Contact Me</h1></a>
+                <li data-menuanchor="projects">
+                    <a href="#projects"><h1><span><i class="fas fa-desktop"></i></span> My Projects</h1></a>
+                </li>
+                <li data-menuanchor="contact">
+                    <a href="#contact"><h1><span><i class="fas fa-phone"></i></span> Contact Me</h1></a>
                 </li>
             </ul>
         </nav>
 
         <div id="fullpage">
-            <!-- Home -->
             <div class="fp-section">
-                <div id="home">
-                    <div id="particles-js"></div>
-                    <div class="meth" style="top: 16%; left: 8%;"><h1>C<sub>10</sub>H<sub>15</sub>N</h1></div>
-                    <div class="meth" style="top: 40%; left: 70%;"><h1>C<sub>10</sub>H<sub>15</sub>N</h1></div>
-                    <div class="meth" style="top: 80%; left: 34%;"><h1>H<sub>15</sub></h1></div>
-                    
-                    <h1 id='home-hi'>Hi, I am</h1>
-                    <div id="top-home-content">
+                <div id='particles-js'></div>
+                <div class="container row align-items-center justify-content-start" style="align-content: center; padding-left: 10%;">
+                    <div class="col-12">
+                        <h1 id='home-hi'>Hi, I am</h1>
+                    </div>
+                    <div class="col-12">
                         <div id="card-stack">
                             <div class="card not-element">
                                 <div class="element-header"></div>
                                 <div class="element-symbol"><h1><strong>S</strong></h1></div>
-                                <div class="element-name"><strong></strong></div>
-                                <div class="element-footer"><strong></strong></div>
+                                <div class="element-name"></div>
+                                <div class="element-footer"></div>
                             </div>
-                            <div class="not-element card">
-                                <div class="element-header"><strong></strong></div>
+                            <div class="card not-element">
+                                <div class="element-header"></div>
                                 <div class="element-symbol"><h1><strong>H</strong></h1></div>
-                                <div class="element-name"><strong></strong></div>
-                                <div class="element-footer"><strong></strong></div>
+                                <div class="element-name"></div>
+                                <div class="element-footer"></div>
                             </div>
                             <div class="element card">
-                                <div class="element-header"><strong>79</strong></div>
+                                <div class="element-header">79</div>
                                 <div class="element-symbol"><h1><strong>A<span style="font-size: 0.84em;">u</span></strong></h1></div>
-                                <div class="element-name"><strong>Gold</strong></div>
-                                <div class="element-footer"><strong>196.97</strong></div>
+                                <div class="element-name">Gold</div>
+                                <div class="element-footer">196.97</div>
                             </div>
                             <div class="card not-element">
-                                <div class="element-header"><strong></strong></div>
+                                <div class="element-header"></div>
                                 <div class="element-symbol"><h1><strong>N</strong></h1></div>
-                                <div class="element-name"><strong></strong></div>
-                                <div class="element-footer"><strong></strong></div>
+                                <div class="element-name"></div>
+                                <div class="element-footer"></div>
                             </div>
                             <div class="card not-element">
-                                <div class="element-header"><strong></strong></div>
+                                <div class="element-header"></div>
                                 <div class="element-symbol"><h1><strong>A</strong></h1></div>
-                                <div class="element-name"><strong></strong></div>
-                                <div class="element-footer"><strong></strong></div>
+                                <div class="element-name"></div>
+                                <div class="element-footer"></div>
                             </div>
                             <div class="card element">
-                                <div class="element-header"><strong>19</strong></div>
+                                <div class="element-header">19</div>
                                 <div class="element-symbol"><h1><strong>K</strong></h1></div>
-                                <div class="element-name"><strong>Potassium</strong></div>
-                                <div class="element-footer"><strong>39.098</strong></div>
+                                <div class="element-name">Potassium</div>
+                                <div class="element-footer">39.098</div>
                             </div>
                         </div>
                     </div>
-                    <h1 id='home-title'>A full stack web developer</h1>
-                    <div id="left-home-content">
-                        <img src="assets/img/bb.png" width="462px" height="400px" id="mask" style="z-index: 10; margin-top: 12px;">
-                    </div>
-                    <h1 id="rolling-text" class='cd-headline push' style="text-align: center; font-family: 'bangers'; font-size: 1.35em; margin-top: 12px; letter-spacing: 2px; color: #17202A">
-                        <span class="cd-words-wrapper" style="text-align: center;">
-                            <b class="is-visible">Let's cook...</b>
-                            <b>Yeah! Science, b****!</b>
-                            <b>I got dipping sticks..</b>
-                            <b>Congratulations, you’ve just left your family a second-hand Subaru!</b>
-                        </span>
-                    </h1>
+                    <div class="col-12">
+                        <h1 id='home-title'>A full stack web developer</h1>
+                    </div> 
                 </div>
             </div>
-
-            <!-- About -->
-            <div class="fp-section fp-auto-height">
-                <div id="about">
+            
+            <div class="fp-section fp-auto-height-responsive">
+                <div id="aboutpage">
                     <div id = "comic-strip">
                         <div class="panel" style="flex-direction: column; justify-content: center; text-align: center;">
                             <h1 class="heading">About Me</h1>
@@ -142,55 +132,56 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Projects -->
+
             <div class="fp-section">
-                <div id="projects">
-                    <div class="projects-left-content">
-                        <img id='antimage' src="assets/img/am.png">
-                        <blockquote class="speech">
-                            <q>It's not time yet!</q>
-                        </blockquote>
-                    </div>
-                    <div class="projects-right-content">
-                        <p id='projects-whoops'>Whoops...</p>
-                        <p id='projects-text'>All my large sized projects are currently in development. Please feel free to check out my Github profile for all my mini projects.</p>
-                        <div class="wrapper-container">
-                            <a href="https://github.com/shaunakdey" class="link-github" style="line-height: 5em; font-weight: 800;"><strong>Go to Github</strong></a>
+                <div class="container">
+                    <div class="row align-items-center justify-content-around" style="height: 100%;">
+                        <div class="col-sm-12 col-lg-5" id="projects-image-container">
+                            <div class="container">
+                                <img class="img-fluid" id='shadow-fiend' src="assets/img/fiend.png">
+                                <!-- <blockquote class="speech">
+                                    <q>It's a perfect time to start a new collection!</q>
+                                </blockquote> -->
+                            </div>
                         </div>
-                        
+                        <div class="col-sm-12 col-lg-7">
+                            <div class="container">
+                                <h1 id='projects-whoops'>Whoops...</h1>
+                                <p id='projects-text'>All my large sized projects are currently in development. Please feel free to check out my Github profile for all my mini projects.</p>
+                                <p><a href="https://github.com/shaunakdey" class="link-github">Go to Github</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact -->
             <div class="fp-section">
-                <div id="contact">
-                    <div class="contact-left">
-                        <svg id="envelope" xmlns="http://www.w3.org/2000/svg" width="257.6" height="260" viewBox="0 0 257.6 260" overflow="scroll" style="margin: 0 auto;">
-                            <polygon class="blue-empty" points="3.5,97.2 159.6,6.1 159.6,162.8 3.5,253.9"/>
-                            <polygon class="blue-fill" points="3.5,97.2 159.6,6.1 159.6,162.8 3.5,253.9"/>  
-                            <g id="envelopeContainer" class=".envelope-square .envelope-flap">
-                                <polygon class="envelope-square" points="3.5,97.2 159.6,6.1 159.6,162.8 3.5,253.9"/>
-                                <polyline class="envelope-flap" points="3.5,97.2 95,120 159.6,6.1"/>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="contact-right">
-                        <p id="contact-text">Just head over to any of the links below to contact me for enquiries, requests and collaborations and <span style="color: rgb(2, 162, 210);">I'll make you an offer you can't refuse... <i class="fas fa-hand-peace"></i></span></p>
-                        <div class="social-container">
-                            <a href="https://www.facebook.com/shaunak.dey1"><span><i class="fab fa-facebook-square social-icons"></i></span></a>
-                            <a href="#"><span><i class="fab fa-twitter-square social-icons"></i></span></a>
-                            <a href="https://in.linkedin.com/in/shaunakdey7"><span><i class="fab fa-linkedin social-icons"></i></span></a>
-                            <a href="https://github.com/shaunakdey"><span><i class="fab fa-github-square social-icons"></i></span></a>
-                            <a href="#https://plus.google.com/u/0/+ShaunakDey75"><span><i class="fab fa-google-plus-square social-icons"></i></span></a>
+                <div class="container">
+                    <div class="row align-items-center justify-content-around" style="height: 100%;">
+                        <div class="col-sm-12 col-lg-7">
+                            <div class="container">
+                                <p id="contact-text">Just head over to any of the links below to contact me for enquiries, requests and collaborations and <span style="color: rgb(2, 162, 210);">I'll make you an offer you can't refuse... <i class="fas fa-hand-peace"></i></span></p>
+                                <div class=" row container-fluid align-items-start">
+                                    <a href="https://www.facebook.com/shaunak.dey1" class="col-2"><span><i class="fab fa-facebook-square social-icons"></i></span></a>
+                                    <a href="#" class="col-2"><span><i class="fab fa-twitter-square social-icons"></i></span></a>
+                                    <a href="https://in.linkedin.com/in/shaunakdey7" class="col-2"><span><i class="fab fa-linkedin social-icons"></i></span></a>
+                                    <!-- <a href="https://github.com/shaunakdey" class="col-2"><span><i class="fab fa-github-square social-icons"></i></span></a> -->
+                                    <a href="https://plus.google.com/u/0/+ShaunakDey75" class="col-2"><span><i class="fab fa-google-plus-square social-icons"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-5 align-items-center" style="text-align: center;">
+                            <svg id="envelope" xmlns="http://www.w3.org/2000/svg" width="257.6" height="260" viewBox="0 0 257.6 260" overflow="scroll">
+                                <polygon class="blue-empty" points="3.5,97.2 159.6,6.1 159.6,162.8 3.5,253.9"/>
+                                <polygon class="blue-fill" points="3.5,97.2 159.6,6.1 159.6,162.8 3.5,253.9"/>  
+                                <g id="envelopeContainer" class=".envelope-square .envelope-flap">
+                                    <polygon class="envelope-square" points="3.5,97.2 159.6,6.1 159.6,162.8 3.5,253.9"/>
+                                    <polyline class="envelope-flap" points="3.5,97.2 95,120 159.6,6.1"/>
+                                </g>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <footer>
-                    <h1>A GGWP Labs production</h1>
-                    <p>Solving your website needs with awesomeness</p>
-                </footer>
             </div>
         </div>
         <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.js"></script>

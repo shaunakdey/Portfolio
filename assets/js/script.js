@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
     var $header_top = $('.header-top');
     var $nav = $('nav');
@@ -14,12 +12,12 @@ $(document).ready(function(){
         $('#heading').toggleClass('open-menu');
     });
 
-    $('#antimage').on('click', function(){
-        new Howl({src: ['assets/sounds/notyet.mp3']}).play();
+    $('#shadow-fiend').on('click', function(){
+        new Howl({src: ['assets/sounds/collection.mp3']}).play();
         $('.speech').css('opacity', '1');
         setTimeout(() => {
             $('.speech').css('opacity', '0');
-        }, 2000);
+        }, 6000);
     });
     
     //Change flex-direction based on aspect-ratio
@@ -59,10 +57,12 @@ $(document).ready(function(){
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         sectionsColor: ['white', '#17202a', '#aeb6bf', 'white'],
         navigation: true,
-        anchors: ['home-anchor', 'about-anchor', 'projects-anchor', 'contact-anchor'],
+        anchors: ['home', 'about', 'projects', 'contact'],
         menu: '#menu',
         scrollOverflow: true,
         touchSensitivity: 10,
+        paddingTop: '5%',
+        paddingBottom: '5%',
 
         afterLoad: function(anchorLink, index) {
             if(index.index == 0) {
