@@ -6,17 +6,25 @@
         <title>What's up yo!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fullpage.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fullpage.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Bangers|Nunito+Sans:600,800" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/headings.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.js"></script>
     </head>
     <body>
+        <!-- Loader -->
+        <div class="loader">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <h1 class="loading-text">LOADING...</h1>
+        </div>
+
+        <!-- Header -->
         <div class="header-top clearfix" id="heading">
             <a class="l-right toggle-menu" href="#">
                 <i></i>
@@ -89,7 +97,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <h1 id='home-title'>A full stack web developer</h1>
+                        <h1 id='home-title'>Full Stack Web Developer</h1>
                     </div> 
                 </div>
             </div>
@@ -184,11 +192,23 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.js"></script>
+        <script src="assets/js/lib/bootstrap.min.js"></script>
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.js"></script>
+        <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="assets/js/lib/particles.js"></script>
-        <script type="text/javascript" src="assets/js/lib/headings.js"></script>
         <script type="text/javascript" src="assets/js/lib/scrolloverflow.min.js"></script>
         <script type="text/javascript" src="assets/js/lib/fullpage.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function(){
+                setTimeout(() => {
+                    document.querySelector('.loader').style.opacity = 0;
+                    setTimeout(() => {
+                        document.querySelector('.loader').style.zIndex = -10;
+                    }, 1500);
+                }, 1500);
+                
+            });
+        </script>
     </body>
 </html>
