@@ -90,7 +90,7 @@ $(document).ready(function(){
 
                 //Animate About Me Section
                 var animations = ['fadeInLeft', 'fadeInUp', 'fadeInDown', 'fadeInRight'];
-                var order = [3, 1, 8, 2, 6, 5, 7, 4];
+                var order = [3, 1, 2, 5, 4];
                 $('.panel').addClass('animated');
                 var panels = $('.panel');
                 for(var i = 0; i < panels.length; i++) {
