@@ -106,6 +106,7 @@ $(document).ready(function(){
             }
 
             else if(nextIndex.index == 3) {
+                $('#lets-cook').addClass('animated fadeInDown').css('animation-delay', '0.1s')
                 $('#contact-text').addClass('animated fadeInDown').css('animation-delay', '0.4s');
                 $('.social-icons').addClass('animated fadeInLeft');
                 var socicons = $('.social-icons');
