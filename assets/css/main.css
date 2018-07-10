@@ -6,8 +6,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'bangers';
-    letter-spacing: 0.2rem;
+    font-family: 'catamaran';
 }
 
 a, p, h1, h2, h3, h4 {
@@ -16,8 +15,7 @@ a, p, h1, h2, h3, h4 {
 }
 
 p {
-    font-family: 'nunito sans';
-    font-weight: 800;
+    font-family: 'catamaran';
 }
 
 @media (min-width: 576px) {
@@ -230,7 +228,6 @@ nav li {
 
 nav li a {
     font-size: 1rem;
-    letter-spacing: 0.2rem;
     display: block;
     padding: 16px;
     color: white;
@@ -454,7 +451,6 @@ nav li a:hover {
         flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-    letter-spacing: 1px;
     will-change: transform;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
