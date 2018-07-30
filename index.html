@@ -3,25 +3,25 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico">
         <title>What's up yo!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fullpage.min.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:700,900" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/animate.min.css">
-        <link rel="stylesheet" href="assets/css/main.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <!-- Loader -->
         <div class="loader">
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <h1 class="loading-text">LOADING...</h1>
+            <div class="bar-container">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
         </div>
 
         <!-- Header -->
@@ -51,55 +51,20 @@
 
         <div id="fullpage">
             <div class="fp-section">
-                <div id='particles-js'></div>
-                <div class="container row align-items-center justify-content-start" style="align-content: center; padding-left: 10%;">
+                <a href="#" style="position: absolute; top: 2%; left: 2%;"><img src="assets/img/logo_white.png" height="75px"></a>
+                <div class="container row" style="align-content: center; text-align: center; margin: 0 auto; color: white;">
                     <div class="col-12">
-                        <h1 id='home-hi'>Hi, I am</h1>
+                        <h3 class="home-swear">I solemnly swear that I'm up to no good</h3>
+                    </div>
+                    <div class="col-12" style="margin: 15% auto;">
+                        <div class="home-hi"></div>
+                        <div class="home-title"></div>
                     </div>
                     <div class="col-12">
-                        <div id="card-stack">
-                            <div class="card not-element">
-                                <div class="element-header"></div>
-                                <div class="element-symbol"><h1><strong>S</strong></h1></div>
-                                <div class="element-name"></div>
-                                <div class="element-footer"></div>
-                            </div>
-                            <div class="card not-element">
-                                <div class="element-header"></div>
-                                <div class="element-symbol"><h1><strong>H</strong></h1></div>
-                                <div class="element-name"></div>
-                                <div class="element-footer"></div>
-                            </div>
-                            <div class="element card">
-                                <div class="element-header">79</div>
-                                <div class="element-symbol"><h1><strong>A<span style="font-size: 0.84em;">u</span></strong></h1></div>
-                                <div class="element-name">Gold</div>
-                                <div class="element-footer">196.97</div>
-                            </div>
-                            <div class="card not-element">
-                                <div class="element-header"></div>
-                                <div class="element-symbol"><h1><strong>N</strong></h1></div>
-                                <div class="element-name"></div>
-                                <div class="element-footer"></div>
-                            </div>
-                            <div class="card not-element">
-                                <div class="element-header"></div>
-                                <div class="element-symbol"><h1><strong>A</strong></h1></div>
-                                <div class="element-name"></div>
-                                <div class="element-footer"></div>
-                            </div>
-                            <div class="card element">
-                                <div class="element-header">19</div>
-                                <div class="element-symbol"><h1><strong>K</strong></h1></div>
-                                <div class="element-name">Potassium</div>
-                                <div class="element-footer">39.098</div>
-                            </div>
-                        </div>
+                        <h3 class="home-mischief">Mischief Managed</h3>
                     </div>
-                    <div class="col-12">
-                        <h1 id='home-title'>Full Stack Web Developer</h1>
-                    </div> 
                 </div>
+                <a href="#" style="position: absolute; top: 2%; left: 2%;"><img src="assets/img/logo_white.png" height="75px"></a>
             </div>
             
             <div class="fp-section fp-auto-height-responsive">
@@ -152,16 +117,13 @@
                         <div class="col-sm-12 col-lg-5" id="projects-image-container">
                             <div class="container">
                                 <img class="img-fluid" id='shadow-fiend' src="assets/img/fiend.png">
-                                <!-- <blockquote class="speech">
-                                    <q>It's a perfect time to start a new collection!</q>
-                                </blockquote> -->
                             </div>
                         </div>
                         <div class="col-sm-12 col-lg-7">
                             <div class="container">
                                 <h1 id='projects-whoops'>Whoops...</h1>
                                 <p id='projects-text'>All my large scale projects are currently in development. Please feel free to check out my Github profile for all my mini projects.</p>
-                                <p><a href="https://github.com/shaunakdey" class="link-github">Go to Github</a></p>
+                                <p><a href="https://github.com/shaunakdey" class="link-github" style="text-decoration: none;">Go to Github</a></p>
                             </div>
                         </div>
                     </div>
@@ -196,12 +158,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid" style="position: absolute; bottom: 0; background-color: #17202a; color: white;">
+                    <div class="row">
+                        <h2 style="margin: 1em auto 0.4em auto; font-size: 1.25em;">A GGWP Labs production</h2>
+                    </div>
+                    <div class="row">
+                        <h4 style="margin: 0 auto 1em auto; font-size: 0.9em;">Solving your website needs with awesomess!</h4>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="assets/js/lib/bootstrap.min.js"></script>
         <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.js"></script>
         <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="assets/js/lib/particles.js"></script>
         <script type="text/javascript" src="assets/js/lib/scrolloverflow.min.js"></script>
         <script type="text/javascript" src="assets/js/lib/fullpage.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
@@ -213,7 +182,6 @@
                         document.querySelector('.loader').style.zIndex = -10;
                     }, 1000);
                 }, 1000);
-                
             });
         </script>
     </body>
