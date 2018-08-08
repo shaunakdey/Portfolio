@@ -49,10 +49,10 @@ $(document).ready(function(){
     var homeTitleText = "A Full Stack Web Developer";
     var titleInnerHTML = "";
     for(var i = 0; i < homeHiText.length; i++) {
-        hiInnerHTML += "<div class='scramble'><h2 style='font-size: 48px;'>" + (homeHiText.charAt(i) == ' ' ? '&nbsp' : homeHiText.charAt(i)) + "</h2></div>";
+        hiInnerHTML += "<div class='scramble'><h2>" + (homeHiText.charAt(i) == ' ' ? '&nbsp' : homeHiText.charAt(i)) + "</h2></div>";
     }
     for(var i = 0; i < homeTitleText.length; i++) {
-        titleInnerHTML += "<div class='scramble'><h5 style='font-size: 32px;'>" + (homeTitleText.charAt(i) == ' ' ? '&nbsp' : homeTitleText.charAt(i)) + "</h5></div>";
+        titleInnerHTML += "<div class='scramble'><h5>" + (homeTitleText.charAt(i) == ' ' ? '&nbsp' : homeTitleText.charAt(i)) + "</h5></div>";
     }
     $('.home-hi').html(hiInnerHTML);
     $('.home-title').html(titleInnerHTML);
